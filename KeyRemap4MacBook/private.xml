@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<root>
+  <list>
+    <item>
+      <name>My VMware Fusion Hacks</name>
+      <appendix>Shift+Space to JIS_KANA</appendix>
+      <identifier>private.app_vmware_fusion</identifier>
+      <only>VIRTUALMACHINE</only>
+      <autogen>--KeyToKey-- KeyCode::SPACE, VK_SHIFT, KeyCode::JIS_KANA</autogen>
+    </item>
+  </list>
+</root>
