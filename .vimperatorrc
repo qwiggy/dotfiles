@@ -1,0 +1,58 @@
+"set guioptions=mrb
+set gui=none,tabs
+set scrollbars
+
+" hints
+set hintchars=hjklasdf
+
+" タブの閉じるボタン非表示
+set! browser.tabs.closeButtons=2
+
+" ページロード時にテキストボックスにフォーカスするのを防ぐ
+set focuscontent
+
+" beep off
+set visualbell
+highlight Bell display:none
+
+" tabを押さなくても補完する
+"set wildoptions=auto
+
+" Suggest engines
+set complete=S
+
+" default search engine
+set defsearch=google
+
+" [Vimperator] Wikipedia Grabs <c-h> and <c-p>
+" http://www.mozdev.org/pipermail/vimperator/2009-April/004222.html
+set! ui.key.contentAccess=0
+
+" google-search.js
+map s :gsearch!<Space>
+
+" multi_requester.js
+map e :mr alc<Space>
+
+" colorscheme
+colorscheme sweets_q
+
+" Evernote Clearly
+nnoremap ,r :js __readable_by_evernote.__readable_by_evernote__launch(buffer.URL)<CR>
+nnoremap ,R :js __readable_by_evernote.readable_by_evernote__button__call(buffer,URL)<CR>
+
+map <C-h> <Nop>
+inoremap <C-f> <Right>
+cnoremap <C-f> <Right>
+inoremap <C-b> <Left>
+cnoremap <C-b> <Left>
+inoremap <C-p> <Up>
+cnoremap <C-p> <Up>
+inoremap <C-n> <Down>
+cnoremap <C-n> <Down>
+inoremap <C-d> <Del>
+cnoremap <C-d> <Del>
+inoremap <C-h> <BS>
+cnoremap <C-h> <BS>
+" inoremap <C-k> <kill-line>
+" cnoremap <C-k> <kill-line>
