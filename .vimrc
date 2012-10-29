@@ -14,5 +14,6 @@ call vundle#rc()
 " Bundle repos:
 Bundle 'sjl/gundo.vim'
 Bundle 'tpope/vim-fugitive'
+Bundle 'thinca/vim-quickrun'
 
 filetype plugin indent on
