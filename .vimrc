@@ -5,6 +5,9 @@ set autoindent
 set expandtab
 set shiftwidth=4
 
+""" color
+colorscheme desert
+
 """ Vandle
 set nocompatible
 filetype off
